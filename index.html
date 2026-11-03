@@ -42,6 +42,11 @@ h1{font-family:var(--sans);font-weight:700;font-size:clamp(3rem,10vw,5.75rem);li
 .meta{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;margin:2rem 0 0;padding:1rem 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:.95rem}
 .meta b{font-weight:600;color:var(--muted);margin-right:.35rem}
 
+.studio{display:inline-flex;align-items:center;gap:.5rem;margin:.25rem 0 0;padding:.6rem 1rem;border:1px solid var(--accent);border-radius:8px;font-family:var(--sans);font-size:.95rem;font-weight:600;text-decoration:none;color:var(--accent);background:var(--accent-soft)}
+.studio:hover{background:var(--accent);color:var(--sheet)}
+.studio .lbl{font-weight:400;color:var(--muted)}
+.studio:hover .lbl{color:var(--sheet)}
+
 /* Instructor card */
 .contact{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;margin:2rem 0 0;overflow:hidden;font-family:var(--sans);font-size:.95rem;line-height:1.45}
 .contact .grid{padding:1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.25rem 2rem}
@@ -164,9 +169,11 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);font
 
 <section>
   <h2><span class="n">03</span>What you need</h2>
-  <p><b>A Google AI Pro account.</b> U.S. college students can currently get a free year of Google AI Pro. Claim it with a <b>personal Gmail account, not your CUNY account</b>, and do it before our first class so we don't lose time to logins.</p>
-  <p><b>Your laptop and a drive.</b> Bring both to every class. You'll finish your piece in Premiere or the editor of your choice, so bring your project files too.</p>
-  <p><b>A heads-up on cost.</b> Video AI can be very expensive. We have $5,000 worth of tokens from Google to use for the class. That is what we'll primarily use. You may want to test tools beyond Google's. Additional tools are not required.</p>
+  <p><b>Google Cloud Console.</b> The Console is our primary tool for producing AI video. Video AI can be very expensive, so the class has $5,000 worth of Google credits there for us to use. You'll get access to the class project before our first session.</p>
+  <a class="studio" href="https://console.cloud.google.com/agent-platform/studio/multimodal;mode=prompt?project=synthetic-video-class&amp;model=gemini-omni-1.1-flash-preview&amp;region=global" target="_blank" rel="noopener"><span class="lbl">Class studio:</span> Google Cloud Console (Gemini Omni) →</a>
+  <p style="margin-top:1.25rem"><b>Your laptop and a drive.</b> Bring both to every class. You'll finish your piece in Premiere or the editor of your choice, so bring your project files too.</p>
+  <p><b>Other tools.</b> You may want to test tools beyond Google's. Additional tools are not required.</p>
+  <p><b>Optional: a free year of Google AI Pro.</b> U.S. college students can currently get a free year of Google AI Pro, which is useful for experimenting outside the class project. <a href="https://one.google.com/ai-student" target="_blank" rel="noopener">Sign up here</a> with a <b>personal Gmail account, not your CUNY account</b>. Google requires a payment method and will start charging after the free year unless you cancel. The offer must be redeemed by December 31, 2026.</p>
 </section>
 
 <section>
